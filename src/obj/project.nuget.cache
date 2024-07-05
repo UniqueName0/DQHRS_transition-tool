@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "M3duf8mOusSrRHtnUxEaf/P70otaRLUcbWihiEnKy2nbCBMXKSwisYYPWW5N/MmDlCAG2JX3zvt+qb7QFOPadA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\name3\\source\\repos\\transition-tool\\biztest\\src\\biztest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\name3\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\name3\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net48\\1.0.3\\microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

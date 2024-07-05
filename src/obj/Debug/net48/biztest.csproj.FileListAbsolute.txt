@@ -1,0 +1,7 @@
+C:\Users\name3\source\repos\transition-tool\biztest\src\obj\Debug\net48\biztest.csproj.AssemblyReference.cache
+C:\Users\name3\source\repos\transition-tool\biztest\src\obj\Debug\net48\biztest.Form1.resources
+C:\Users\name3\source\repos\transition-tool\biztest\src\obj\Debug\net48\biztest.csproj.GenerateResource.cache
+C:\Users\name3\source\repos\transition-tool\biztest\src\obj\Debug\net48\biztest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\name3\source\repos\transition-tool\biztest\src\obj\Debug\net48\biztest.AssemblyInfoInputs.cache
+C:\Users\name3\source\repos\transition-tool\biztest\src\obj\Debug\net48\biztest.AssemblyInfo.cs
+C:\Users\name3\source\repos\transition-tool\biztest\src\obj\Debug\net48\biztest.csproj.CoreCompileInputs.cache

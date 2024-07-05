@@ -1,0 +1,114 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<LangVersion>10.0</LangVersion>
+		<Nullable>enable</Nullable>
+		<TargetFramework>net48</TargetFramework>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(BIZHAWK_HOME)' == '' ">
+		<BIZHAWK_HOME>$(ProjectDir)../BizHawk/</BIZHAWK_HOME><!-- if building EmuHawk from source, point to e.g. `$(ProjectDir)../BizHawk/output/` -->
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(BIZHAWK_DATA_HOME)' == '' ">
+		<BIZHAWK_DATA_HOME>$(BIZHAWK_HOME)</BIZHAWK_DATA_HOME><!-- ignore this; on NixOS these are different dirs -->
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+		<Reference Include="BizHawk.BizInvoke">
+		  <HintPath>..\BizHawk\dll\BizHawk.BizInvoke.dll</HintPath>
+		</Reference>
+		<Reference Include="BizHawk.Bizware.BizwareGL">
+		  <HintPath>..\BizHawk\dll\BizHawk.Bizware.BizwareGL.dll</HintPath>
+		</Reference>
+		<Reference Include="BizHawk.Bizware.DirectX">
+		  <HintPath>..\BizHawk\dll\BizHawk.Bizware.DirectX.dll</HintPath>
+		</Reference>
+		<Reference Include="BizHawk.Bizware.OpenTK3">
+		  <HintPath>..\BizHawk\dll\BizHawk.Bizware.OpenTK3.dll</HintPath>
+		</Reference>
+		<Reference Include="BizHawk.Emulation.Common">
+		  <HintPath>..\BizHawk\dll\BizHawk.Emulation.Common.dll</HintPath>
+		</Reference>
+		<Reference Include="BizHawk.Emulation.Cores">
+		  <HintPath>..\BizHawk\dll\BizHawk.Emulation.Cores.dll</HintPath>
+		</Reference>
+		<Reference Include="BizHawk.Emulation.DiscSystem">
+		  <HintPath>..\BizHawk\dll\BizHawk.Emulation.DiscSystem.dll</HintPath>
+		</Reference>
+		<Reference Include="Cyotek.Drawing.BitmapFont">
+		  <HintPath>..\BizHawk\dll\Cyotek.Drawing.BitmapFont.dll</HintPath>
+		</Reference>
+		<Reference Include="FlatBuffers.GenOutput">
+		  <HintPath>..\BizHawk\dll\FlatBuffers.GenOutput.dll</HintPath>
+		</Reference>
+		<Reference Include="Google.FlatBuffers">
+		  <HintPath>..\BizHawk\dll\Google.FlatBuffers.dll</HintPath>
+		</Reference>
+		<Reference Include="ISOParser">
+		  <HintPath>..\BizHawk\dll\ISOParser.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.Bcl.HashCode">
+		  <HintPath>..\BizHawk\dll\Microsoft.Bcl.HashCode.dll</HintPath>
+		</Reference>
+		<Reference Include="Newtonsoft.Json">
+		  <HintPath>..\BizHawk\dll\Newtonsoft.Json.dll</HintPath>
+		</Reference>
+		<Reference Include="NLua">
+		  <HintPath>..\BizHawk\dll\NLua.dll</HintPath>
+		</Reference>
+		<Reference Include="OpenTK">
+		  <HintPath>..\BizHawk\dll\OpenTK.dll</HintPath>
+		</Reference>
+		<Reference Include="OpenTK.GLControl">
+		  <HintPath>..\BizHawk\dll\OpenTK.GLControl.dll</HintPath>
+		</Reference>
+		<Reference Include="PcxFileTypePlugin.HawkQuantizer">
+		  <HintPath>..\BizHawk\dll\PcxFileTypePlugin.HawkQuantizer.dll</HintPath>
+		</Reference>
+		<Reference Include="SharpCompress">
+		  <HintPath>..\BizHawk\dll\SharpCompress.dll</HintPath>
+		</Reference>
+		<Reference Include="SlimDX">
+		  <HintPath>..\BizHawk\dll\SlimDX.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Buffers">
+		  <HintPath>..\BizHawk\dll\System.Buffers.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Collections.Immutable">
+		  <HintPath>..\BizHawk\dll\System.Collections.Immutable.dll</HintPath>
+		</Reference>
+		<Reference Include="System.ComponentModel.Annotations">
+		  <HintPath>..\BizHawk\dll\System.ComponentModel.Annotations.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Data.SQLite">
+		  <HintPath>..\BizHawk\dll\System.Data.SQLite.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Drawing.Common">
+		  <HintPath>..\BizHawk\dll\System.Drawing.Common.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Memory">
+		  <HintPath>..\BizHawk\dll\System.Memory.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Numerics.Vectors">
+		  <HintPath>..\BizHawk\dll\System.Numerics.Vectors.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Resources.Extensions">
+		  <HintPath>..\BizHawk\dll\System.Resources.Extensions.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Runtime.CompilerServices.Unsafe">
+		  <HintPath>..\BizHawk\dll\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Text.Encoding.CodePages">
+		  <HintPath>..\BizHawk\dll\System.Text.Encoding.CodePages.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Windows.Forms" />
+		<Reference Include="BizHawk.Client.Common" HintPath="$(BIZHAWK_HOME)dll/BizHawk.Client.Common.dll" />
+		<Reference Include="BizHawk.Client.EmuHawk" HintPath="$(BIZHAWK_HOME)EmuHawk.exe" />
+		<Reference Include="BizHawk.Common" HintPath="$(BIZHAWK_HOME)dll/BizHawk.Common.dll" />
+		<Reference Include="BizHawk.WinForms.Controls" HintPath="$(BIZHAWK_HOME)dll/BizHawk.WinForms.Controls.dll" />
+		<Reference Include="Virtu">
+		  <HintPath>..\BizHawk\dll\Virtu.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Copy SourceFiles="$(OutputPath)$(MSBuildProjectName).dll" DestinationFolder="$(BIZHAWK_DATA_HOME)ExternalTools" />
+	</Target>
+</Project>
